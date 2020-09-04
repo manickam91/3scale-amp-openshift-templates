@@ -329,10 +329,10 @@ objects:
             timeoutSeconds: 1
           resources:
             limits:
-              cpu: "2"
-              memory: 32Gi
+              cpu: 500m
+              memory: 2Gi
             requests:
-              cpu: "1"
+              cpu: 500m
               memory: 1Gi
           volumeMounts:
           - mountPath: /var/lib/redis/data
@@ -549,7 +549,7 @@ objects:
           resources:
             limits:
               cpu: 500m
-              memory: 32Gi
+              memory: 2Gi
             requests:
               cpu: 150m
               memory: 256Mi
@@ -917,7 +917,7 @@ objects:
             timeoutSeconds: 5
           resources:
             limits:
-              cpu: "1"
+              cpu: 500m
               memory: 700Mi
             requests:
               cpu: 500m
@@ -1067,7 +1067,7 @@ objects:
           name: backend-worker
           resources:
             limits:
-              cpu: "1"
+              cpu: 500m
               memory: 300Mi
             requests:
               cpu: 150m
@@ -2241,7 +2241,7 @@ objects:
             timeoutSeconds: 10
           resources:
             limits:
-              cpu: "1"
+              cpu: 500m
               memory: 800Mi
             requests:
               cpu: 50m
@@ -2539,7 +2539,7 @@ objects:
             timeoutSeconds: 10
           resources:
             limits:
-              cpu: "1"
+              cpu: 500m
               memory: 800Mi
             requests:
               cpu: 50m
@@ -2836,7 +2836,7 @@ objects:
             timeoutSeconds: 10
           resources:
             limits:
-              cpu: "1"
+              cpu: 500m
               memory: 800Mi
             requests:
               cpu: 50m
@@ -3173,7 +3173,7 @@ objects:
           name: system-sidekiq
           resources:
             limits:
-              cpu: "1"
+              cpu: 500m
               memory: 2Gi
             requests:
               cpu: 100m
@@ -3381,7 +3381,7 @@ objects:
           name: system-sphinx
           resources:
             limits:
-              cpu: "1"
+              cpu: 500m
               memory: 512Mi
             requests:
               cpu: 80m
@@ -3666,7 +3666,7 @@ objects:
             timeoutSeconds: 10
           resources:
             limits:
-              cpu: "1"
+              cpu: 500m
               memory: 512Mi
             requests:
               cpu: 150m
@@ -3793,7 +3793,7 @@ objects:
             protocol: TCP
           resources:
             limits:
-              cpu: "1"
+              cpu: 500m
               memory: 512Mi
             requests:
               cpu: 250m
@@ -4171,7 +4171,7 @@ objects:
             timeoutSeconds: 5
           resources:
             limits:
-              cpu: "1"
+              cpu: 500m
               memory: 128Mi
             requests:
               cpu: 500m
